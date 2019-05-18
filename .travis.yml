@@ -1,12 +1,7 @@
 language: node_js
 
-dist: xenial
-
 node_js:
     - "8.10.0"
-
-before_install:
-  - npm i -g npm@3.5.2
 
 script:
   - npm run build && npm test
@@ -18,6 +13,5 @@ deploy:
   keep_history: true
   on:
     branch: master
-    repo: https://github.com/xotonic/xotonic.github.com.git
     local_dir: public
 
