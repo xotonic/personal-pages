@@ -13,6 +13,7 @@ deploy:
   keep_history: true
   target_branch: master
   local_dir: public
+  repo: https://github.com/xotonic/xotonic.github.com.git
   on:
-      branch: src
+      branch: master 
 
