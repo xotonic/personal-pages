@@ -1,0 +1,15 @@
+language: node_js
+
+script:
+  - npm run build && npm test
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
+    repo: https://github.com/xotonic/xotonic.github.com.git
+    local_dir: public
+
