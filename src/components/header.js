@@ -2,10 +2,10 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, shadowTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: `#171a1c`,
       marginBottom: `1.45rem`,
     }}
   >
@@ -13,10 +13,10 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
+        padding: `0.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h3 style={{ margin: 0 }}>
         <Link
           to="/"
           style={{
@@ -26,7 +26,8 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-      </h1>
+        <span style={{color: `gray`, marginLeft: `1ex`, fontSize:`12pt`}}>{shadowTitle}</span>
+      </h3>
     </div>
   </header>
 )
