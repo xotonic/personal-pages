@@ -11,7 +11,7 @@ const IndexPage = () => (
     <SEO title="Dmitriy Kuzmin (@xotonic)" />
     <h1>About me</h1>
     <Resume/>
-    <Link to="/page-2/">Go to page 2</Link>
+    <a href='resume.pdf'>Download PDF</a>
   </Layout>
 )
 
