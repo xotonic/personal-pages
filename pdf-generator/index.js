@@ -34,8 +34,8 @@ const MyDocument = () => (
   </Document>
 );
 
-if (!fs.existsSync('static')){
-    fs.mkdirSync('static');
+if (!fs.existsSync('../static')){
+    fs.mkdirSync('../static');
 }
 
 ReactPDF.render(<MyDocument/>, `../static/resume.pdf`);
