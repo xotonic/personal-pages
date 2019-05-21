@@ -1,65 +1,18 @@
-/**
- * Layout component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
+import React from 'react';
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-
-import Header from "./header"
-import "./layout.css"
+import './style.scss';
+import Helmet from './helmet';
+import Header from './header';
+import Midsection from './midsection';
+import Footer from './footer';
 
 const Layout = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query SiteTitleQuery {
-        site {
-          siteMetadata {
-            title
-          }
-        }
-      }
-    `}
-    render={data => (
-      <>
-        <div className="site">
-            <Header siteTitle={data.site.siteMetadata.title} shadowTitle={"Software Engineer"} />
-            <div className="site-content">
-                <div style={{
-                    margin: `0 auto`,
-                    maxWidth: 960,
-                    padding: `0px 1.0875rem 1.45rem`,
-                }}
-                >
-                <main>{children}</main>
-                </div>
-            </div>
-            <footer>
-                <div 
-                  style={{
-                    margin: `0 auto`,
-                    maxWidth: 960,
-                    padding: `0px 1.0875rem 1.45rem`,
-                    paddingTop: 0,
-                    color: `gray`,
-                  }}
-                >
-                © {new Date().getFullYear()}, Built with
-                {` `}
-                <a href="https://www.gatsbyjs.org">Gatsby</a>
-                </div>
-            </footer>
-        </div>
-      </>
-    )}
-  />
-)
+	<div>
+		<Helmet />
+		<Header />
+		<Midsection />
+		<Footer />
+	</div>
+);
 
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
+export default Layout;

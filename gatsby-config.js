@@ -1,8 +1,11 @@
 module.exports = {
   siteMetadata: {
     title: `Dmitriy Kuzmin`,
-    description: `Personal page of Dmitriy Kuzmin`,
-    author: `@xotonic`,
+    description: `Personal page of Dmitriy Kuzmin, Software developer`,
+    author: `Dmitriy Kuzmin`,
+    imageUrl: `https://avatars2.githubusercontent.com/u/11139333`,
+    keywords: `Sofware Engineer, Developer, CV, Resume, Portfolio`,
+    github: `https://github.com/xotonic`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

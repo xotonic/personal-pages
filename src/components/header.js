@@ -1,43 +1,28 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react';
+import './style.scss';
 
-const Header = ({ siteTitle, shadowTitle }) => (
-  <header
-    style={{
-      background: `#171a1c`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `0.45rem 1.0875rem`,
-      }}
-    >
-      <h3 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-        <span style={{color: `gray`, marginLeft: `1ex`, fontSize:`12pt`}}>{shadowTitle}</span>
-      </h3>
-    </div>
-  </header>
-)
+import Navbar from './navbar';
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+const Header = ({ siteTitle }) => (
+    <section className="hero gradientBg is-fullheight-with-navbar">
+            <Navbar />
+        <div className="hero-body">
+            <div className="container center">
+                <article className="media">
+                    <div className="media-content">
+                        <div className="content">
+                            <h1 className="is-uppercase is-size-1 has-text-white">
+                                Dmitriy Kuzmin
+                            </h1>
+                            <p className="subtitle has-text-white is-size-8">
+                                Software Engineer
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+);
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
-
-export default Header
+export default Header;
