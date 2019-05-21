@@ -3,6 +3,10 @@ language: node_js
 node_js:
     - "8.10.0"
 
+install:
+    - npm install
+    - cd pdf-generator && npm install ; cd -
+
 script:
   - npm run build && npm test
 
