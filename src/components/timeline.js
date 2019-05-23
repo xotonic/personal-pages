@@ -17,7 +17,9 @@ const TimelineItem = props => (
   </div>
 )
 
-const ysection = (data) => { return data.allDataYaml.nodes[0].resume }
+const ysection = (data) => data.allDataYaml.nodes[0].resume
+const ymerge = (fields, mapper) =>
+  fields.map(v => mapper()[v]).reduce((acc, cur) => acc.concat(cur))
 
 const Timeline = () => (
   <StaticQuery
@@ -45,11 +47,12 @@ const Timeline = () => (
         <h1 className="project-name">Career timeline</h1>
         <div id="timeline">
           {
-            ysection(data).experience.concat(ysection(data).education).map((value, index) =>
-              <TimelineItem
-                title={value.title}
-                description={value.description}
-                right={index % 2 === 1} />)}
+            ymerge(['experience', 'education'], () => ysection(data))
+              .map((value, index) =>
+                <TimelineItem
+                  title={value.title}
+                  description={value.description}
+                  right={index % 2 === 1} />)}
         </div>
       </div>
     }
