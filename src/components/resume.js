@@ -1,5 +1,5 @@
-import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import React from 'react'
+import { StaticQuery, graphql } from 'gatsby'
 
 const Resume = () => (
   <StaticQuery
@@ -12,12 +12,12 @@ const Resume = () => (
           }
         }
     `}
-    render={ data => 
-            <div>
-                { data.allDataYaml.nodes.map((value, index) =>
-                    <div>Salary: {value.resume.salary} { value.resume.skills.map((val, i) => <div>- {val}</div>)}</div>) }
-            </div> 
+    render={ data =>
+      <div>
+        { data.allDataYaml.nodes.map((value, index) =>
+          <div>Salary: {value.resume.salary} { value.resume.skills.map((val, i) => <div>- {val}</div>)}</div>) }
+      </div>
     }
   />
 )
-export default Resume 
+export default Resume

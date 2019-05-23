@@ -1,11 +1,10 @@
+import React from 'react'
+import ReactPDF, { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer'
 
-const yaml = require('js-yaml')
+// const yaml = require('js-yaml')
 const fs = require('fs')
-import React from 'react';
-import { Page, Text, View, Document, StyleSheet } from '@react-pdf/renderer';
-import ReactPDF from '@react-pdf/renderer';
 
-var yml = yaml.safeLoad(fs.readFileSync('../src/data/test.yml','utf8'))
+// var yml = yaml.safeLoad(fs.readFileSync('../src/data/test.yml', 'utf8'))
 
 // Create styles
 const styles = StyleSheet.create({
@@ -18,7 +17,7 @@ const styles = StyleSheet.create({
     padding: 5,
     flexGrow: 0
   }
-});
+})
 
 // Create Document Component
 const MyDocument = () => (
@@ -32,10 +31,10 @@ const MyDocument = () => (
       </View>
     </Page>
   </Document>
-);
+)
 
-if (!fs.existsSync('../static')){
-    fs.mkdirSync('../static');
+if (!fs.existsSync('../static')) {
+  fs.mkdirSync('../static')
 }
 
-ReactPDF.render(<MyDocument/>, `../static/resume.pdf`);
+ReactPDF.render(<MyDocument/>, `../static/resume.pdf`)
