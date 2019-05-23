@@ -7,7 +7,7 @@ const Resume = () => (
         query {
           allDataYaml {
             nodes {
-              resume { salary, skills }
+              resume {  }
             }
           }
         }
