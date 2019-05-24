@@ -40,6 +40,12 @@ module.exports = {
         path: `./src/data/`,
       },
     },
-    `gatsby-plugin-sass`
+    `gatsby-plugin-sass`,
+  {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-140823183-1",
+      },
+    },
   ],
 }
