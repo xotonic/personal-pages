@@ -17,6 +17,7 @@ const Midsection = () => (
           </p>
         </div>
         <Timeline/>
+        <p>Work on this page is still in progress...</p>
       </div>
     </section>
   </div>
