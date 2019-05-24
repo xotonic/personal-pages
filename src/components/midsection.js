@@ -6,7 +6,7 @@ const Midsection = () => (
   <div>
     <section className="section">
       <div className="container">
-        <div className="content">
+        <div className="content is-medium">
           <h2>About me</h2>
           <p>
             Software engineer with 2+ years of work experience.

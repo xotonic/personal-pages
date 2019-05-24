@@ -16,16 +16,15 @@ const Footer = () => (
             }
             `}
     render={data => (
-      <footer className="footer center has-background-light">
+      <footer className="footer center has-background-black">
         <div className="content has-text-centered">
-          <p className="is-size-4">
-        This website was handcrafted with plenty of{' '}
-            <Emoji emoji="🍺" />
+          <p className="is-size-6">
+              Made with Gatsby, Bulma, StackOverflow
           </p>
           <article className="media center">
             <span className="icon">
               <a href={data.site.siteMetadata.github}>
-                <FaGithub size="fa-2x" color="black" />
+                <FaGithub size="fa-2x" color="white" />
               </a>
             </span>
             &nbsp;

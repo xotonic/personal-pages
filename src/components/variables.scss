@@ -1,4 +1,16 @@
 // VARIABLES
 
-$primary-color: #2980b9;
-$secondary-color: #6dd5fa;
+$primary-color: rgb(255, 56, 96);
+$secondary-color: #6f2232;
+$accent-color : rgb(255, 56, 96); // acid red
+
+$text-color : rgba(255, 255, 255, 0.8);
+$text : rgba(255, 255, 255, 0.8);
+$background : #1a1a1d;
+$secondary-background : #4e4e50;
+
+$body-background-color : $background;
+$title-color : $text-color;
+$text-strong : $text-color;
+
+$hero-bg : linear-gradient(to right, $primary-color, $secondary-color);

@@ -43,8 +43,8 @@ const Timeline = () => (
     `}
 
     render={ data =>
-      <div className="container">
-        <h1 className="project-name">Career timeline</h1>
+      <div className="tl-container">
+        <h1 className="project-name title is-2">Career timeline</h1>
         <div id="timeline">
           {
             ymerge(['experience', 'education'], () => ysection(data))

@@ -6,7 +6,11 @@
 
 .gradientBg {
   display: flex;
-  background: linear-gradient(to right, $primary-color, $secondary-color);
+  background: $hero-bg;
+}
+
+.hero .navbar {
+  background: $hero-bg;
 }
 
 .center {
