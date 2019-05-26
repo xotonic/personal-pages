@@ -1,5 +1,5 @@
 resume:
-  about: 
+  about:
      Software engineer with 2+ years of work experience.
      Developing solutions in various fields from telecommunications
      management and marketing to cutting-edge researches of blockchain technology.
@@ -8,11 +8,17 @@ resume:
   experience:
       - title:
           Sep 2018 - present, Blockchain developer, LuxCore, Remote
+        employer:
+            name: LuxCore
+            link: '#'
         description:
             Designing, developing and functional testing a fraud-resistant
             decentralized exchange tightly integrated with Bitcoin blockchain.
       - title:
           Aug 2016 - Sep 2018, Software engineer, Eltex
+        employer:
+            name: Eltex
+            link: '#'
         description:
             Developing data-rich front-end for B2B clients with dozens of pages
             for monitoring and configuration network devices, dashboards
@@ -21,15 +27,77 @@ resume:
             of an accounting system, optimizing databases,
             collecting and analyzing metrics.
   education:
-      - title: 
+      - title:
           Sep 2015 - May 2016, Additional programming courses
+        link: '#'
         description:
             Linux system administration and kernel programming.
             Android app development.
       - title:
           Sep 2013 - Jul 2017, Novosibirsk State Technical University, Russia
+        link: '#'
         description:
-            Maintaining an educational system for creating PL compilers (online grammar editor). 
+            Maintaining an educational system for creating PL compilers (online grammar editor).
             Administrating GitLab server for student's projects.
-
+  skills:
+      - programming_languages:
+          - name: Java
+            related:
+                - name: Maven
+                  link: '#'
+                - name: Gradle
+                  link: '#'
+                - name: Vaadin
+                  link: '#'
+                - name: Vert.X
+                  link: '#'
+                - name: Hezelcast
+                  link: '#'
+                - name: Spring
+                  link: '#'
+                - name: Tomcat
+                  link: '#'
+                - name: JUnit
+                  link: '#'
+                - name: Selenium
+                  link: '#'
+                - name: Swing
+                  link: '#'
+          - name: C++
+            related:
+                - name: boost
+                  link: '#'
+                - name: autotools
+                  link: '#'
+                - name: QT
+                  link: '#'
+          - name: Python
+          - name: SQL
+      - other_tools:
+          - name: MySQL
+            link: '#'
+          - name: MongoDB
+            link: '#'
+          - name: Blockchain
+            link: '#'
+            related:
+                - name: Bitcoin Script
+                  link: '#'
+                - name: Solidity
+                  link: '#'
+          - name: CI
+            related:
+                - name: Docker
+                  link: '#'
+                - name: Vagrant
+                  link: '#'
+                - name: Jenkins
+                  link: '#'
+                - name: Travis CI
+                  link: '#'
+      - languages:
+          - name: English
+            level: B2
+          - name: Russian
+            level: Native
 
