@@ -1,6 +1,7 @@
 import React from 'react'
 import './style.scss'
 import Timeline from './timeline'
+import Skills from './skills'
 import { StaticQuery, graphql } from 'gatsby'
 
 const Midsection = () => (
@@ -26,6 +27,7 @@ const Midsection = () => (
               <p>{ data.allDataYaml.nodes[0].resume.about }</p>
             </div>
             <Timeline/>
+            <Skills/>
             <p>Work on this page is still in progress...</p>
           </div>
         </section>
