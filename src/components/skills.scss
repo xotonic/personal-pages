@@ -1,5 +1,11 @@
 @import "./variables.scss";
 
-.stars-cntnr {
-    margin-left: 10pt;
+.stars {
+  margin-left: 10pt;
+  .star {
+    color: $accent-color;
+  }
+  .star-inactive {
+    color: $secondary-background;
+  }
 }

@@ -91,7 +91,7 @@ $timeline-color: $secondary-color;
 
     .timeline-content {
       width: 45%;
-      background: $secondary-background;
+      background: $background;
       padding: 20px;
       @include prefix(box-shadow, 0 3px 0 rgba(0, 0, 0, 0.1));
       @include prefix(border-radius, 5px);

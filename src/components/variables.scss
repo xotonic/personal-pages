@@ -2,7 +2,9 @@
 
 $primary-color: rgb(255, 56, 96);
 $secondary-color: #6f2232;
-$accent-color : #ff3860; // acid red
+$accent-color : #ff8a00; 
+$accent-color-2 : #da1b60; 
+$accent-gradient : linear-gradient(to right, #ff8a00, #da1b60);
 
 $text-color : rgba(255, 255, 255, 0.8);
 $text : rgba(255, 255, 255, 0.8);
@@ -13,4 +15,4 @@ $body-background-color : $background;
 $title-color : $text-color;
 $text-strong : $text-color;
 $box-background-color: $background;
-$hero-bg : linear-gradient(to right, $primary-color, $secondary-color);
+$hero-bg : $accent-gradient;

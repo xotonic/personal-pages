@@ -3,20 +3,21 @@ import { StaticQuery, graphql } from 'gatsby'
 import { FaStar } from 'react-icons/fa'
 import './style.scss'
 import './skills.scss'
+import TitleBlock from './titleblock'
 
 const PLTitle = props => {
   let stars = []
   for (let i = 0; i < props.total; i++) {
-    let color = i < props.score ? 'yellow' : 'white'
+    let color = i < props.score ? 'star' : 'star-inactive'
     stars.push(<span className="icon">
-      <FaStar size="fa-2x" color={color}/>
+      <FaStar className={color} size="fa-2x"/>
     </span>
     )
   }
   return (
     <h4 className="title is-4">
       <span>{props.children}</span>
-      <span className="stars-cntnr">{stars}</span>
+      <span className="stars">{stars}</span>
     </h4>
   )
 }
@@ -58,13 +59,21 @@ const Skills = () => (
 
     render={ data =>
       <div>
-        <h2 className="project-name title is-2">Skills</h2>
-        <div className="columns">{
-          data.allDataYaml
-            .nodes[0].resume
-            .skills.programming_languages
-            .map((value, i) => <ProgrammingLanguage skill={value}/>)
-        }</div>
+        <TitleBlock>
+          <h2 className="project-name title is-2">Skills</h2>
+        </TitleBlock>
+        <section className="section">
+          <div className="container">
+            <div className="columns content">
+              {
+                data.allDataYaml
+                  .nodes[0].resume
+                  .skills.programming_languages
+                  .map((value, i) => <ProgrammingLanguage skill={value}/>)
+              }
+            </div>
+          </div>
+        </section>
       </div>
     }
   />

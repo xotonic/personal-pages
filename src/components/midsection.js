@@ -26,9 +26,15 @@ const Midsection = () => (
               <h2>About</h2>
               <p>{ data.allDataYaml.nodes[0].resume.about }</p>
             </div>
-            <Timeline/>
-            <Skills/>
-            <p>Work on this page is still in progress...</p>
+          </div>
+        </section>
+        <Timeline/>
+        <Skills/>
+        <section className="section">
+          <div className="container">
+            <p className="content">
+                    Work on this page is still in progress...
+            </p>
           </div>
         </section>
       </div>

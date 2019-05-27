@@ -2,6 +2,7 @@ import React from 'react'
 import { StaticQuery, graphql } from 'gatsby'
 import './timeline.scss'
 import './style.scss'
+import TitleBlock from './titleblock'
 
 const TimelineItem = props => (
   <div className="timeline-item">
@@ -43,18 +44,23 @@ const Timeline = () => (
     `}
 
     render={ data =>
-      <div className="tl-container">
-        <h1 className="project-name title is-2">Career timeline</h1>
-        <div id="timeline">
-          {
-            ymerge(['experience', 'education'], () => ysection(data))
-              .map((value, index) =>
-                <TimelineItem
-                  title={value.title}
-                  description={value.description}
-                  right={index % 2 === 1} />)}
-        </div>
-      </div>
+      <div>
+        <TitleBlock>
+          <h1 className="project-name title is-2">Career timeline</h1>
+        </TitleBlock>
+        <div className="tl-container">
+          <section className="section">
+            <div id="timeline">
+              {
+                ymerge(['experience', 'education'], () => ysection(data))
+                  .map((value, index) =>
+                    <TimelineItem
+                      title={value.title}
+                      description={value.description}
+                      right={index % 2 === 1} />)}
+            </div>
+          </section>
+        </div></div>
     }
   />
 )
