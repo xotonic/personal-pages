@@ -16,6 +16,11 @@ $timeline-color: $secondary-color;
     clear: both;
   }
 }
+ 
+.tl-fa {
+    width: 21px;
+    height: 20px;
+}
 
 @mixin prefix($prop, $val) {
   @each $prefix in "-webkit-", "-moz-", "-ms-", "" {
