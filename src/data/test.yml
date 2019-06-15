@@ -5,14 +5,18 @@ resume:
     Constantly investing in education and learning new tools for making better products.
     Seeking for further gaining and sharing experience as a software developer.
   experience:
-    - title: Sep 2018 - present, Blockchain developer, LuxCore, Remote
+    - title: Blockchain developer, Remote
+      from: Sep 2018
+      to: present
       employer:
         name: LuxCore
         link: "#"
       description:
         Designing, developing and functional testing a fraud-resistant
         decentralized exchange tightly integrated with Bitcoin blockchain.
-    - title: Aug 2016 - Sep 2018, Software engineer, Eltex
+    - title: Software engineer
+      from: Aug 2016
+      to: Sep 2018
       employer:
         name: Eltex
         link: "#"
@@ -24,11 +28,15 @@ resume:
         of an accounting system, optimizing databases,
         collecting and analyzing metrics.
   education:
-    - title: Sep 2015 - May 2016, Additional programming courses
+    - title: Additional programming courses
+      from: Sep 2015
+      to: May 2016
       link: "#"
       description: Linux system administration and kernel programming.
         Android app development.
-    - title: Sep 2013 - Jul 2017, Novosibirsk State Technical University, Russia
+    - title: Novosibirsk State Technical University, Russia
+      from: Sep 2013
+      to: Jul 2017
       link: "#"
       description:
         Maintaining an educational system for creating PL compilers (online grammar editor).

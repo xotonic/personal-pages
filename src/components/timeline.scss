@@ -105,8 +105,8 @@ $timeline-color: $secondary-color;
       @include prefix(transition, all 0.3s ease);
       color: $text-color;
 
-      h2 {
-        padding: 15px;
+      .tl-title {
+        padding: 20px;
         background: $timeline-color;
         margin: -20px -20px 0 -20px;
         @include prefix(border-radius, 3px 3px 0 0);

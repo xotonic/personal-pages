@@ -5,14 +5,18 @@ import './style.scss'
 import TitleBlock from './titleblock'
 import { FaStar } from 'react-icons/fa'
 
-const TimelineItem = props => (
+const TimelineItem = ({ job, right }) => (
   <div className="timeline-item">
     <div className="timeline-icon">
       <FaStar className="tl-fa"/>
     </div>
-    <div className={'timeline-content' + (props.right ? ' right' : '')}>
-      <h2>{props.title}</h2>
-      <p>{props.description}</p>
+    <div className={'timeline-content' + (right ? ' right' : '')}>
+      <div className="tl-title">
+        <div>{job.title}</div>
+        <div>{job.from} - {job.to}</div>
+        { job.employer && <div>{job.employer.name}</div> }
+      </div>
+      <p>{job.description}</p>
     </div>
   </div>
 )
@@ -31,10 +35,18 @@ const Timeline = () => (
                 experience {
                   title
                   description
+                  from
+                  to
+                  employer {
+                    name
+                    link
+                  }
                 }
                 education {
                   title
                   description
+                  from
+                  to
                 }
               }
             }
@@ -53,10 +65,8 @@ const Timeline = () => (
               {
                 ymerge(['experience', 'education'], () => ysection(data))
                   .map((value, index) =>
-                    <TimelineItem
-                      title={value.title}
-                      description={value.description}
-                      right={index % 2 === 1} />)}
+                    <TimelineItem job={value} right={index % 2 === 1} />)
+              }
             </div>
           </section>
         </div></div>
