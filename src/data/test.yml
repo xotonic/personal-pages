@@ -46,7 +46,7 @@ resume:
             link: "#"
           - name: Vert.X
             link: "#"
-          - name: Hezelcast
+          - name: Hazelcast
             link: "#"
           - name: Spring
             link: "#"
