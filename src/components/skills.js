@@ -15,15 +15,31 @@ const PLTitle = props => {
     )
   }
   return (
-    <h4 className="title is-4">
-      <span>{props.children}</span>
-      <span className="stars">{stars}</span>
+    <h4 className="title is-4 nowrap">
+      <span>{props.text}</span>{props.children}
     </h4>
   )
 }
+
+const Stars = props => {
+  let stars = []
+  for (let i = 0; i < props.total; i++) {
+    let color = i < props.score ? 'star' : 'star-inactive'
+    stars.push(<span className="icon">
+      <FaStar className={color} size="fa-2x"/>
+    </span>
+    )
+  }
+  return (
+    <span className="stars">{stars}</span>
+  )
+}
+
 const SkillItem = props => (
-  <div className="content box column">
-    <PLTitle total="5" score={props.skill.score}>{props.skill.name}</PLTitle>
+  <div className="content box column is-one-third">
+    <PLTitle text={props.skill.name}>
+      { props.skill.score && <Stars total="5" score={props.skill.score}/>}
+    </PLTitle>
     { props.skill.related
       ? <div className="tags are-large">
         {props.skill.related.map((value, i) =>
@@ -64,7 +80,7 @@ const Skills = () => (
         </TitleBlock>
         <section className="section">
           <div className="container">
-            <div className="columns content">
+            <div className="columns is-multiline content">
               {
                 data.allDataYaml
                   .nodes[0].resume

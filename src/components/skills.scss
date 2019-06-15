@@ -2,10 +2,14 @@
 
 .stars {
   margin-left: 10pt;
+  white-space: nowrap;
   .star {
     color: $accent-color;
   }
   .star-inactive {
     color: $secondary-background;
   }
+}
+.nowrap {
+  white-space: nowrap;
 }
