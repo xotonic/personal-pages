@@ -21,7 +21,7 @@ const PLTitle = props => {
     </h4>
   )
 }
-const ProgrammingLanguage = props => (
+const SkillItem = props => (
   <div className="content box column">
     <PLTitle total="5" score={props.skill.score}>{props.skill.name}</PLTitle>
     { props.skill.related
@@ -69,7 +69,7 @@ const Skills = () => (
                 data.allDataYaml
                   .nodes[0].resume
                   .skills.programming_languages
-                  .map((value, i) => <ProgrammingLanguage skill={value}/>)
+                  .map((value, i) => <SkillItem skill={value}/>)
               }
             </div>
           </div>
