@@ -42,7 +42,7 @@ const Skills = () => (
             nodes {
               resume {
                 skills {
-                  programming_languages {
+                  tech {
                     name
                     score
                     related {
@@ -68,7 +68,7 @@ const Skills = () => (
               {
                 data.allDataYaml
                   .nodes[0].resume
-                  .skills.programming_languages
+                  .skills.tech
                   .map((value, i) => <SkillItem skill={value}/>)
               }
             </div>

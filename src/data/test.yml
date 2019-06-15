@@ -34,7 +34,7 @@ resume:
         Maintaining an educational system for creating PL compilers (online grammar editor).
         Administrating GitLab server for student's projects.
   skills:
-    programming_languages:
+    tech:
       - name: Java
         score: 4
         related:
