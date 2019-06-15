@@ -38,22 +38,22 @@ const Skills = () => (
   <StaticQuery
     query={graphql`
         query {
-              allDataYaml {
-                nodes {
-                  resume {
-                    skills {
-                      programming_languages {
-                        name
-                        score
-                        related {
-                          name
-                          link
-                        }
-                      }
+          allDataYaml {
+            nodes {
+              resume {
+                skills {
+                  programming_languages {
+                    name
+                    score
+                    related {
+                      name
+                      link
                     }
                   }
                 }
               }
+            }
+          }
         }
     `}
 
