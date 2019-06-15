@@ -15,7 +15,7 @@ const PLTitle = props => {
     )
   }
   return (
-    <h4 className="title is-4 nowrap">
+    <h4 className="title is-4 nowrap has-text-centered">
       <span>{props.text}</span>{props.children}
     </h4>
   )
@@ -41,7 +41,7 @@ const SkillItem = props => (
       { props.skill.score && <Stars total="5" score={props.skill.score}/>}
     </PLTitle>
     { props.skill.related
-      ? <div className="tags are-large">
+      ? <div className="tags are-large tags-centered">
         {props.skill.related.map((value, i) =>
           <span className="tag is-light">{value.name}</span>)}
       </div>
