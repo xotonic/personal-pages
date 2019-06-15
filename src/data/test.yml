@@ -10,7 +10,7 @@ resume:
       to: present
       employer:
         name: LuxCore
-        link: "#"
+        link: "https://luxcore.io/"
       description:
         Designing, developing and functional testing a fraud-resistant
         decentralized exchange tightly integrated with Bitcoin blockchain.
@@ -19,7 +19,7 @@ resume:
       to: Sep 2018
       employer:
         name: Eltex
-        link: "#"
+        link: "https://eltex-co.com/"
       description:
         Developing data-rich front-end for B2B clients with dozens of pages
         for monitoring and configuration network devices, dashboards
@@ -32,7 +32,7 @@ resume:
       to: May 2016
       employer:
         name: Additional programming courses
-        link: "#"
+        link: "http://www.c-java.ru/"
       description: Linux system administration and kernel programming.
         Android app development.
     - title: Bachelor of Computer Science
@@ -40,7 +40,7 @@ resume:
       to: Jul 2017
       employer:
         name: Novosibirsk State Technical University, Russia
-        link: "#"
+        link: "https://en.nstu.ru/"
       description:
         Maintaining an educational system for creating PL compilers (online grammar editor).
         Administrating GitLab server for student's projects.
