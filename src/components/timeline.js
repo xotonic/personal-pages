@@ -47,7 +47,7 @@ const Timeline = () => (
         <TitleBlock>
           <h1 className="project-name title is-2">Career timeline</h1>
         </TitleBlock>
-        <div className="tl-container">
+        <div className="container">
           <section className="section">
             <div id="timeline">
               {
