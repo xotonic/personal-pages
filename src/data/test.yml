@@ -71,13 +71,15 @@ resume:
         score: 4
       - name: Python
         score: 3
-    other_tools:
-      - name: MySQL
-        link: "#"
-      - name: MongoDB
-        link: "#"
+      - name: Databases
+        related:
+          - name: MySQL
+            link: "#"
+          - name: SQLite
+            link: "#"
+          - name: MongoDB
+            link: "#"
       - name: Blockchain
-        link: "#"
         related:
           - name: Bitcoin Script
             link: "#"
