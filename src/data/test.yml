@@ -95,6 +95,12 @@ resume:
             link: "#"
           - name: Travis CI
             link: "#"
+      - name: Telecommunications 
+        related:
+          - name: RADIUS
+            link: "#"
+          - name: NETCONF
+            link: "#"
     languages:
       - name: English
         level: B2
