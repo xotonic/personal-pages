@@ -4,7 +4,7 @@
 $bg-body: $background;
 
 // Timeline
-$timeline-color: $secondary-color;
+$timeline-color: lighten($background, 5%);
 
 // Mixins and Placeholders
 %clearfix {
@@ -17,9 +17,27 @@ $timeline-color: $secondary-color;
   }
 }
  
-.tl-fa {
-    width: 21px;
-    height: 20px;
+.tl {
+    &-fa {
+        width: 21px;
+        height: 20px;
+    }
+
+    &-job-title {
+        color: $accent-color;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    &-time {
+        color: mix($accent-color, $accent-color-2)
+    }
+    &-link {
+        color: $accent-color-2;
+        &-icon {
+            vertical-align: middle;
+            margin: 0 5px;
+        }
+    }
 }
 
 @mixin prefix($prop, $val) {

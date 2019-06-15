@@ -3,7 +3,11 @@ import { StaticQuery, graphql } from 'gatsby'
 import './timeline.scss'
 import './style.scss'
 import TitleBlock from './titleblock'
-import { FaStar } from 'react-icons/fa'
+import { FaStar, FaExternalLinkSquareAlt } from 'react-icons/fa'
+
+const IconedLink = props => (
+  <a className="tl-link" href={props.href}><span>{props.children}</span><FaExternalLinkSquareAlt className="tl-link-icon"/></a>
+)
 
 const TimelineItem = ({ job, right }) => (
   <div className="timeline-item">
@@ -12,9 +16,9 @@ const TimelineItem = ({ job, right }) => (
     </div>
     <div className={'timeline-content' + (right ? ' right' : '')}>
       <div className="tl-title">
-        <div>{job.title}</div>
-        <div>{job.from} - {job.to}</div>
-        { job.employer && <div>{job.employer.name}</div> }
+        <div className="tl-job-title">{job.title}</div>
+        <div className="tl-time">{job.from} - {job.to}</div>
+        { job.employer && <div><IconedLink href={job.employer.link}>{job.employer.name}</IconedLink></div> }
       </div>
       <p>{job.description}</p>
     </div>
