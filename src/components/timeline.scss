@@ -16,28 +16,28 @@ $timeline-color: lighten($background, 5%);
     clear: both;
   }
 }
- 
-.tl {
-    &-fa {
-        width: 21px;
-        height: 20px;
-    }
 
-    &-job-title {
-        color: $accent-color;
-        font-weight: bold;
-        font-size: 1.5rem;
+.tl {
+  &-fa {
+    width: 21px;
+    height: 20px;
+  }
+
+  &-job-title {
+    color: $accent-color;
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+  &-time {
+    color: mix($accent-color, $accent-color-2);
+  }
+  &-link {
+    color: $accent-color-2;
+    &-icon {
+      vertical-align: middle;
+      margin: 0 5px;
     }
-    &-time {
-        color: mix($accent-color, $accent-color-2)
-    }
-    &-link {
-        color: $accent-color-2;
-        &-icon {
-            vertical-align: middle;
-            margin: 0 5px;
-        }
-    }
+  }
 }
 
 @mixin prefix($prop, $val) {
@@ -62,7 +62,6 @@ $timeline-color: lighten($background, 5%);
   text-align: center;
   padding: 10px 0;
 }
-
 
 // Timeline
 #timeline {
@@ -131,7 +130,6 @@ $timeline-color: lighten($background, 5%);
       }
       p {
         padding-top: 10px;
-
       }
 
       &:before {

@@ -106,7 +106,7 @@ resume:
             link: "#"
           - name: Travis CI
             link: "#"
-      - name: Telecommunications 
+      - name: Telecommunications
         related:
           - name: RADIUS
             link: "#"
