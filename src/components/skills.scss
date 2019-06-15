@@ -13,6 +13,11 @@
 .nowrap {
   white-space: nowrap;
 }
+
+.skill-tag {
+    background-color: lighten($background, 10%) !important;
+}
+
 .tags-centered {
     justify-content: center;
 }

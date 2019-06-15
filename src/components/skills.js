@@ -43,7 +43,7 @@ const SkillItem = props => (
     { props.skill.related
       ? <div className="tags are-large tags-centered">
         {props.skill.related.map((value, i) =>
-          <span className="tag is-light">{value.name}</span>)}
+          <span className="tag skill-tag">{value.name}</span>)}
       </div>
       : null
     }
