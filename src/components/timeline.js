@@ -21,10 +21,6 @@ const TimelineItem = ({ job, right }) => (
   </div>
 )
 
-const ysection = (data) => data.allDataYaml.nodes[0].resume
-const ymerge = (fields, mapper) =>
-  fields.map(v => mapper()[v]).reduce((acc, cur) => acc.concat(cur))
-
 const Timeline = () => (
   <StaticQuery
     query={graphql`
@@ -42,12 +38,6 @@ const Timeline = () => (
                     link
                   }
                 }
-                education {
-                  title
-                  description
-                  from
-                  to
-                }
               }
             }
           }
@@ -63,9 +53,9 @@ const Timeline = () => (
           <section className="section">
             <div id="timeline">
               {
-                ymerge(['experience', 'education'], () => ysection(data))
+                data.allDataYaml.nodes[0].resume.experience
                   .map((value, index) =>
-                    <TimelineItem job={value} right={index % 2 === 1} />)
+                    <TimelineItem job={value} right={index % 2 === 1}/>)
               }
             </div>
           </section>

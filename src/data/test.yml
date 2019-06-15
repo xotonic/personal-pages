@@ -27,17 +27,20 @@ resume:
         Maintaining and developing constantly scaling components
         of an accounting system, optimizing databases,
         collecting and analyzing metrics.
-  education:
-    - title: Additional programming courses
+    - title: Student
       from: Sep 2015
       to: May 2016
-      link: "#"
+      employer:
+        name: Additional programming courses
+        link: "#"
       description: Linux system administration and kernel programming.
         Android app development.
-    - title: Novosibirsk State Technical University, Russia
+    - title: Bachelor of Computer Science
       from: Sep 2013
       to: Jul 2017
-      link: "#"
+      employer:
+        name: Novosibirsk State Technical University, Russia
+        link: "#"
       description:
         Maintaining an educational system for creating PL compilers (online grammar editor).
         Administrating GitLab server for student's projects.
