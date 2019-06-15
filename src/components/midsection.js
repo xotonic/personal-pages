@@ -22,7 +22,7 @@ const Midsection = () => (
       <div>
         <section className="section">
           <div className="container">
-            <div className="content is-medium">
+            <div className="content is-medium about">
               <h2>About</h2>
               <p>{ data.allDataYaml.nodes[0].resume.about }</p>
             </div>
