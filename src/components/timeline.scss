@@ -70,7 +70,6 @@ $timeline-color: lighten($background, 5%);
   margin: 30px auto;
   position: relative;
   padding: 0 10px;
-  @include prefix(transition, all 0.4s ease);
 
   &:before {
     content: "";
@@ -117,9 +116,7 @@ $timeline-color: lighten($background, 5%);
       width: 45%;
       background: $background;
       padding: 20px;
-      @include prefix(box-shadow, 0 3px 0 rgba(0, 0, 0, 0.1));
       @include prefix(border-radius, 5px);
-      @include prefix(transition, all 0.3s ease);
       color: $text-color;
 
       .tl-title {
