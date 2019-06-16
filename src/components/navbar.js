@@ -1,11 +1,10 @@
 import React from 'react'
 import { FaFilePdf } from 'react-icons/fa'
-import Helmet from './helmet'
 import './style.scss'
 
 const Navbar = () => (
   <div className="hero-head is-hidden-mobile">
-    <nav className="navbar is-fixed-top">
+    <nav className="navbar">
       <div className="container">
         <div className="navbar-brand">
           <a
@@ -29,9 +28,6 @@ const Navbar = () => (
         </div>
       </div>
     </nav>
-    <Helmet bodyAttributes={{
-        class: 'has-navbar-fixed-top'
-    }}/>
   </div>
 )
 
