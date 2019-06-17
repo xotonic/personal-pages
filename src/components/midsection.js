@@ -4,6 +4,8 @@ import Timeline from './timeline'
 import Skills from './skills'
 import { StaticQuery, graphql } from 'gatsby'
 import Footer from './footer'
+import TitleBlock from './titleblock'
+import About from './about'
 
 const Midsection = () => (
   <StaticQuery
@@ -20,19 +22,18 @@ const Midsection = () => (
     `}
 
     render={ data =>
-      <div className="prlx-group backgrnd">
-        <section className="prlx-base section">
-          <div className="container">
-            <div className="content is-medium about">
-              <h2>About</h2>
-              <p>{ data.allDataYaml.nodes[0].resume.about }</p>
-            </div>
-          </div>
-        </section>
+      <div>
+        <About/>
+        <TitleBlock>
+          <h1 className="project-name title is-2">Career timeline</h1>
+        </TitleBlock>
         <Timeline/>
+        <TitleBlock>
+          <h2 className="project-name title is-2">Skills</h2>
+        </TitleBlock>
         <Skills/>
-        <section className="section">
-          <div className="container">
+        <section className="prlx-group section">
+          <div className="prlx-layer prlx-base container">
             <p className="content">
                     Work on this page is still in progress...
             </p>

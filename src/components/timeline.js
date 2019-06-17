@@ -49,21 +49,20 @@ const Timeline = () => (
     `}
 
     render={ data =>
-      <div className="backgrnd">
-        <TitleBlock>
-          <h1 className="project-name title is-2">Career timeline</h1>
-        </TitleBlock>
-        <div className="container">
-          <section className="section">
-            <div id="timeline">
-              {
-                data.allDataYaml.nodes[0].resume.experience
-                  .map((value, index) =>
-                    <TimelineItem job={value} right={index % 2 === 1}/>)
-              }
-            </div>
-          </section>
-        </div></div>
+      <div id="group-timeline-body" className="prlx-group">
+          <div className="prlx-layer prlx-base backgrnd">
+            <div className="container">
+              <section className="section">
+                <div id="timeline">
+                  {
+                    data.allDataYaml.nodes[0].resume.experience
+                      .map((value, index) =>
+                        <TimelineItem job={value} right={index % 2 === 1}/>)
+                  }
+                </div>
+              </section>
+            </div></div>
+      </div>
     }
   />
 )

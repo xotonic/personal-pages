@@ -74,11 +74,8 @@ const Skills = () => (
     `}
 
     render={ data =>
-      <div>
-        <TitleBlock>
-          <h2 className="project-name title is-2">Skills</h2>
-        </TitleBlock>
-        <section className="section">
+      <div id="group-skills-body" className="prlx-group">
+        <section className="section prlx-layer prlx-base backgrnd">
           <div className="container">
             <div className="columns is-multiline content">
               {

@@ -6,7 +6,7 @@ import Header from './header'
 
 
 const ParallaxHeader = props => (
-      <div className="prlx-group">
+      <div id="group-hero" className="prlx-group">
         <div className="prlx-layer prlx-base">
             <Header/>
         </div>

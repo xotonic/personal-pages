@@ -3,18 +3,16 @@
 $rotate: 5deg;
 
 .a-block {
-  background: $accent-gradient;
-  margin: 3vh 0;
+  //background: $accent-gradient;
   height: 30vh;
   display: table;
   width: 100%;
-  transform: skewY($rotate);
-
-  .a-content {
-    margin: auto;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-    transform: skewY(-$rotate);
-  }
+  //transform: skewY($rotate);
+}
+.a-content {
+  margin: auto;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  //transform: skewY(-$rotate);
 }
