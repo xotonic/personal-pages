@@ -49,7 +49,7 @@ const Timeline = () => (
     `}
 
     render={ data =>
-      <div>
+      <div className="backgrnd">
         <TitleBlock>
           <h1 className="project-name title is-2">Career timeline</h1>
         </TitleBlock>

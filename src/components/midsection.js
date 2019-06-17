@@ -3,6 +3,7 @@ import './style.scss'
 import Timeline from './timeline'
 import Skills from './skills'
 import { StaticQuery, graphql } from 'gatsby'
+import Footer from './footer'
 
 const Midsection = () => (
   <StaticQuery
@@ -19,8 +20,8 @@ const Midsection = () => (
     `}
 
     render={ data =>
-      <div>
-        <section className="section">
+      <div className="prlx-group backgrnd">
+        <section className="prlx-base section">
           <div className="container">
             <div className="content is-medium about">
               <h2>About</h2>
@@ -37,6 +38,7 @@ const Midsection = () => (
             </p>
           </div>
         </section>
+        <Footer/>
       </div>
     }
   />

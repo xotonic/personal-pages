@@ -4,7 +4,7 @@ import './style.scss'
 import Navbar from './navbar'
 
 const Header = ({ siteTitle }) => (
-  <section className="hero gradientBg is-fullheight">
+  <section className="hero is-fullheight">
     <Navbar />
     <div className="hero-body">
       <div className="container center">
