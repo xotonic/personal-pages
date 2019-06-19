@@ -158,29 +158,24 @@ $timeline-color: lighten($background, 5%);
 
 @media screen and (max-width: 768px) {
   #timeline {
-    margin: 30px;
+    margin: 0px;
     padding: 0px;
-    width: 90%;
+    width: 100%;
     &:before {
-      left: 0;
+      display: none;
     }
 
     .timeline-item {
       .timeline-content {
-        width: 90%;
-        float: right;
-
+        width: 100%;
         &:before,
         &.right:before {
-          left: 10%;
-          margin-left: -6px;
-          border-left: 0;
-          border-right: 7px solid $timeline-color;
+          display: none;
         }
       }
 
       .timeline-icon {
-        left: 0;
+        display: none;
       }
     }
   }
