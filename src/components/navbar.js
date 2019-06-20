@@ -16,7 +16,7 @@ const Navbar = () => (
         <div id="navbarMenuHeroA" className="navbar-menu">
           <div className="navbar-end">
             <span className="navbar-item">
-              <a className="button is-danger"
+              <a className="button button-download"
                 href="resume.pdf" >
                 <span className="icon">
                   <FaFilePdf size="fa-2x"/>

@@ -36,7 +36,7 @@ const Stars = props => {
 }
 
 const SkillItem = props => (
-  <div className="content box column is-half">
+  <div className="content column skill-col is-half">
     <PLTitle text={props.skill.name}>
       { props.skill.score && <Stars total="5" score={props.skill.score}/>}
     </PLTitle>

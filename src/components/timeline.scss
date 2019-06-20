@@ -75,7 +75,7 @@ $timeline-color: lighten($background, 5%);
     content: "";
     width: 3px;
     height: 100%;
-    background: $accent-color;
+    background: linear-gradient($accent-color-2 90%, rgba(0,0,0,0));
     left: 50%;
     top: 0;
     position: absolute;
@@ -94,7 +94,10 @@ $timeline-color: lighten($background, 5%);
     @extend %clearfix;
 
     .timeline-icon {
-      background: $accent-color;
+      background: $accent-color-2;
+      box-shadow: #fff 0 -1px 4px, #b01fbe 0 0px 30px, #f500fe 0 -10px 20px,
+        #7203c0 -1px -18px 40px, -1px 5px 15px 13px rgba(0, 0, 0, 0),
+        inset 0 -5px 10px 2px #f500ff;
       width: 50px;
       height: 50px;
       position: absolute;

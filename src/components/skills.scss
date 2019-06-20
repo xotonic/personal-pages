@@ -4,20 +4,25 @@
   margin-left: 10pt;
   white-space: nowrap;
   .star {
-    color: $accent-color;
+    color: $accent-color-2;
   }
   .star-inactive {
-    color: $secondary-background;
+    color: #000;
   }
 }
+
 .nowrap {
   white-space: nowrap;
 }
 
 .skill-tag {
-    background-color: lighten($background, 10%) !important;
+  background-color: darken($accent-color-2, 30%) !important;
 }
 
 .tags-centered {
-    justify-content: center;
+  justify-content: center;
+}
+
+.skill-col {
+  min-height: 20vh;
 }

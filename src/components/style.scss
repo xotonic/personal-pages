@@ -6,13 +6,10 @@
 
 @import "./parallax.scss";
 
-.has-background {
-    background: $background;
-}
 
-.gradientBg {
-  display: flex;
-  background: $hero-bg;
+
+.has-background {
+  background: linear-gradient(to bottom, #000, $secondary-background);
 }
 
 .center {
@@ -21,7 +18,15 @@
   align-items: center;
 }
 
+$footer-glow : darken($accent-color-2, 20%);
+
 .footer {
+  min-height: 30vh;
+  background: linear-gradient(
+    to bottom,
+    $secondary-background,
+    $footer-glow
+  );
   display: flex;
   padding: 1.5rem 1.5rem;
   line-height: 1.5rem;
@@ -35,10 +40,22 @@
 }
 
 .no-scroll {
-    overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .about {
-    margin-top: 10vh;
-    margin-bottom: 20vh;
+  margin-top: 10vh;
+  margin-bottom: 20vh;
+}
+
+.button-download {
+    color: darken($white, 10%);
+    border: none;
+    background: none;
+    padding: 20px;
+    &:hover {
+        color: $accent-color;
+        border-color: $accent-color;
+        transition: color 0.1s;
+    }
 }
