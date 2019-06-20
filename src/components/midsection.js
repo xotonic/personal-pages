@@ -19,7 +19,7 @@ const Midsection = () => (
     `}
 
     render={ data =>
-      <div>
+      <div className="has-background">
         <section className="section">
           <div className="container">
             <div className="content is-medium about">

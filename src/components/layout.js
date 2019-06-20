@@ -7,7 +7,7 @@ import Midsection from './midsection'
 import Footer from './footer'
 
 const Layout = ({ children }) => (
-  <div>
+  <div className="prlx-header">
     <Helmet />
     <Header />
     <Midsection />

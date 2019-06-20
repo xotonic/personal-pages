@@ -1,0 +1,40 @@
+
+html{
+    height: 100%;
+    overflow: hidden /* required for correct scrolling; */
+}
+body {
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-x: hidden; /* required for correct scrolling */
+}
+
+.prlx-header, .prlx-header::before {
+    background: 50% 50% / cover;
+}
+
+.prlx-header {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 0 0 0;
+    position: relative;
+    transform-style: inherit;
+    width: 100vw;
+}
+
+.prlx-header::before{
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    background-image: url(../images/hero.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    z-index: -1;
+    height: 100vh;
+}

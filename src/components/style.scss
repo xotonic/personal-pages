@@ -4,12 +4,14 @@
 // Importing Bulma from node_modules
 @import "~bulma/bulma.sass";
 
-.gradientBg {
-  display: flex;
-  background: $hero-bg;
+@import "./parallax.scss";
+
+.has-background {
+    background: $background;
 }
 
-.hero .navbar {
+.gradientBg {
+  display: flex;
   background: $hero-bg;
 }
 
