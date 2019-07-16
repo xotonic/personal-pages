@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
     fontFamily: 'Roboto',
     fontStyle: 'normal',
     fontWeight: 'normal',
-    fontSize: '12pt'
+    fontSize: '12pt',
+    padding: '10pt 20pt'
   },
   section: {
     margin: 5,
