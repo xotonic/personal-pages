@@ -9,7 +9,7 @@ This is a my(@xotonic) personal JAMStack based web-site.
 Features:
  - All owner information is configured in a single [YAML file](src/data/test.yml)
  - You fill all the personal data in one place, you get both a landing page and a classic PDF resume.
- - This is fully serverless working sovely on Github Pages.
+ - This is fully serverless working solely on Github Pages.
  - Google Analytics is integrated
  - Mobile friendly
 
