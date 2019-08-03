@@ -11,13 +11,6 @@ const Midsection = () => (
     <Contacts/>
     <Timeline/>
     <Skills/>
-    <section className="section">
-      <div className="container">
-        <p className="content">
-                    Work on this page is still in progress...
-        </p>
-      </div>
-    </section>
   </div>
 )
 
