@@ -1,8 +1,6 @@
 import React from 'react'
-import { FaGithub } from 'react-icons/fa'
 import { StaticQuery, graphql } from 'gatsby'
 import './style.scss'
-import Emoji from './emoji'
 
 const Footer = () => (
   <StaticQuery
@@ -19,17 +17,9 @@ const Footer = () => (
       <footer className="footer center has-background-black">
         <div className="content has-text-centered">
           <p className="is-size-6">
-              Made with Gatsby, Bulma, StackOverflow
+            <div>Made with Gatsby, Bulma, StackOverflow</div>
           </p>
-          <article className="media center">
-            <span className="icon">
-              <a href={data.site.siteMetadata.github}>
-                <FaGithub size="fa-2x" color="white" />
-              </a>
-            </span>
-            &nbsp;
-          </article>
-            &nbsp;
+          <a className="button is-link is-inverted is-outlined" href={data.site.siteMetadata.github}>View this site on GitHub</a>
         </div>
       </footer>
     )}

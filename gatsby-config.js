@@ -5,7 +5,7 @@ module.exports = {
     author: `Dmitriy Kuzmin`,
     imageUrl: `https://avatars2.githubusercontent.com/u/11139333`,
     keywords: `Sofware Engineer, Developer, CV, Resume, Portfolio`,
-    github: `https://github.com/xotonic`
+    github: `https://github.com/xotonic/personal-pages`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
